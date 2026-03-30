@@ -1,9 +1,14 @@
 import React from 'react'
+import Brokerage from './Brokerage';
+import Hero from "./Hero";
 
 const PricingPage = () => {
   return (
-    <div>PricingPage</div>
-  )
+    <>
+      <Hero />
+      <Brokerage />
+    </>
+  );
 }
 
 export default PricingPage
