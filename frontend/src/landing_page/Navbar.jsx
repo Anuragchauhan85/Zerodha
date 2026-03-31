@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -8,13 +9,13 @@ const Navbar = () => {
         style={{ backgrounColor: "#ffffff" }}
       >
         <div className="container p-2">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img
               src="media\images\logo.svg"
               alt="logo"
               style={{ width: "25%" }}
             />
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,35 +28,47 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse " 
+            className="collapse navbar-collapse "
             id="navbarSupportedContent"
           >
             <form className="d-flex" role="search">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/signup"
+                  >
                     Signup
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <Link className="nav-link active" to="/About">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/product"
+                  >
                     Product
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <Link className="nav-link active" to="/pricing">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+                  <Link
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/support"
+                  >
                     Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </form>
