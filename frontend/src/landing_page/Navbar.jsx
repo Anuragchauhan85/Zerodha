@@ -51,9 +51,9 @@ const Navbar = () => {
                   <Link
                     className="nav-link active"
                     aria-current="page"
-                    to="/product"
+                    to="/products"
                   >
-                    Product
+                    Products
                   </Link>
                 </li>
                 <li className="nav-item">
