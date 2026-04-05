@@ -1,6 +1,6 @@
 const { Schema } = require("mongoose");
 
-const PositionSchema = new Schema({
+const PositionsSchema = new Schema({
   product: String,
   name: String,
   qty: Number,
@@ -12,4 +12,4 @@ const PositionSchema = new Schema({
 });
 
 
-module.exports = { PositionSchema };
+module.exports = { PositionsSchema };
